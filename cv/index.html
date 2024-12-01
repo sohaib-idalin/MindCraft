@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sohaib Idalin</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f4f4f4, #e2e2e2);
+        }
+        
+        header {
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #fff;
+            margin-right: 20px;
+        }
+        
+        main {
+            display: flex;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        section {
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        .projects {
+            flex-basis: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem;
+            background: #ffdaa9;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+        }
+
+        .project-row {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .project {
+            width: 50%;
+            background: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        h1, h2, h3 {
+            margin-top: 0;
+            font-family: 'Georgia', serif;
+        }
+        
+        ul {
+            padding-left: 25px;
+        }
+        
+        ul li {
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="photo.png" alt="Sohaib Idalin">
+        <div>
+            <h1>Sohaib Idalin</h1>
+            <p>Software Engineer</p>
+        </div>
+    </header>
+    <main>
+        <div class="column">
+            <section>
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Email: sohaib@example.com</li>
+                    <li>Phone: +1234567890</li>
+                    <li>LinkedIn: linkedin.com/in/sohaibidalin</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Programming Languages: JavaScript, Python, Java</li>
+                    <li>Web Technologies: HTML, CSS, React, Node.js</li>
+                    <li>Databases: MySQL, MongoDB</li>
+                    <li>Tools: Git, Docker, Jenkins</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Certifications</h2>
+                <ul>
+                    <li>Certified JavaScript Developer</li>
+                    <li>Certified Scrum Master</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Languages</h2>
+                <ul>
+                    <li>English (Fluent)</li>
+                    <li>Spanish (Intermediate)</li>
+                </ul>
+            </section>
+        </div>
+        <div class="column">
+            <section>
+                <h2>Professional Experience</h2>
+                <h3>Software Engineer at Tech Company</h3>
+                <p>January 2020 - Present</p>
+                <ul>
+                    <li>Developed and maintained web applications using HTML, CSS, and JavaScript.</li>
+                    <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+                    <li>Improved application performance and user experience.</li>
+                </ul>
+                <h3>Junior Developer at Another Tech Company</h3>
+                <p>June 2018 - December 2019</p>
+                <ul>
+                    <li>Assisted in the development of web applications and APIs.</li>
+                    <li>Performed code reviews and provided feedback to team members.</li>
+                    <li>Participated in agile development processes.</li>
+                </ul>
+            </section>
+            <section>
+                <h2>Education</h2>
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p>University of Technology, 2014 - 2018</p>
+            </section>
+        </div>
+    </main>
+    <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-row">
+            <div class="project">
+                <h3>Project 1: Task Manager App</h3>
+                <p>Developed a task management application with React and Node.js, enabling users to organize and prioritize tasks effectively.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2: E-Commerce Platform</h3>
+                <p>Created a scalable e-commerce platform using Python and Django, integrating secure payment systems and user authentication.</p>
+            </div>
+        </div>
+        <div class="project-row">
+            <div class="project">
+                <h3>Project 3: Portfolio Website</h3>
+                <p>Designed a personal portfolio website using HTML, CSS, and JavaScript to showcase projects and professional achievements.</p>
+            </div>
+            <div class="project">
+                <h3>Project 4: Chat Application</h3>
+                <p>Implemented a real-time chat application with WebSocket and Node.js, providing seamless communication for users.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,385 @@
+:root {
+    /* Color Variables */
+    --primary-color: #007bff;
+    --secondary-color: #ffdaa9;
+    --text-color: #fff;
+    --background-color: #555;
+    --hover-color: #ffdaa9;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --error-color: #e74c3c;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    
+    /* Font Size Variables */
+    --base-font-size: 16px;
+    --title-font-size: 24px;
+    --header-font-size: 16px;
+    --text-font-size: 14px;
+    
+    /* Margin & Padding Variables */
+    --base-margin: 20px;
+    --section-margin: 5em;
+    --small-margin: 15px;
+    --large-margin: 3em;
+    --button-padding: 12px 30px;
+    --form-padding: 10px;
+    --form-gap: 1.5rem;
+    
+    /* Border Radius */
+    --border-radius: 5px;
+    --rounded-border: 10px;
+    
+    /* Box Shadow */
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --hover-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #555;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: rgba(51, 51, 51, 0.9);
+    width: auto;
+    height: 7vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    font-family: "fantasy";
+    color: #fff;
+    font-size: 16px;
+    font-weight: bolder;
+    margin-left: 20px;
+
+}
+nav {
+    flex: 5;
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdaa9;
+}
+
+#home {
+    height: 93vh;
+    background: #555;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    scroll-margin-top: 7vh; 
+}
+
+
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+}
+
+main {
+    background: linear-gradient(to right, #333, #666);
+    padding: 2rem;
+}
+
+section {
+    margin: 5em;
+    scroll-margin-top: 5vh; 
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    scroll-margin-top: 7vh; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 3em;
+
+}
+#about {
+    display: flex;
+    
+
+    
+}
+.contact-skills {
+    flex: 1;
+}
+.about-me {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.contact-information {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+.contact-information div {
+    margin-block: -10px;
+}
+.contact-information, .skills {
+    margin: 2em;
+}
+
+
+.progress {
+    background: black;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+.progress-bar {
+    background: #9f9f9f;
+    height: 10px;
+    border-radius: 5px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-family: 'Georgia', serif;
+}
+
+
+section:hover {
+    transform: scale(1.02);
+}
+
+.projects {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 2rem;
+    background: #ffdaa9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.project-row {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project {
+    width: 50%;
+    margin: 1em;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.project img {
+    width: 100%;
+    height: 200px;
+    border-radius: 0px;
+}
+.project-desc {
+    margin:1em;
+}
+
+
+
+#contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Contact Form Section */
+  .contact-form {
+    flex: 1;
+    margin: 3em;
+
+  }
+  
+  .contact-form-title h5 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .form-field {
+    margin-bottom: 15px;
+  }
+  
+  .form-field input,
+  .form-field textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .form-field textarea {
+    resize: none;
+  }
+  
+  .control-mess {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .loading,
+  .error-message,
+  .sent-message {
+    display: none;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .loading {
+    color: #f39c12;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+  }
+  
+  .sent-message {
+    color: #27ae60;
+  }
+  
+  .form-submit {
+    text-align: center;
+  }
+  
+  .form-submit button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form-submit button:hover {
+    background: #0056b3;
+  }
+  
+  /* Get in Touch Section */
+  .Get-in-Touch {
+    flex: 1;
+    margin: 3em;
+    
+  }
+  
+  .Get-in-Touch .title h5 {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .more-info p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .list-ico {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .list-ico li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .list-ico li i {
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  /* Social Icons */
+  .socials ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .socials ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: #fff;
+    border-radius: 50%;
+    transition: background 0.3s;
+  }
+  
+  .socials ul li a:hover {
+    background: #0056b3;
+  }
+  
+  .socials ul li a .ico-circle {
+    font-size: 20px;
+  }
+
+  
